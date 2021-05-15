@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: #d7eef7;
+                font-family: 'Nunito', sans-serif;
+                padding-top: 50px;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            {
+                font-family: 'Raleway', sans-serif;
+            }
+            a,
+            p{
+                color: #4b5123
+            }
+
+            .container{
+                max-width: 550px;
+                margin: auto;
+                background-color: #fff;
+                -webkit-box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.21);
+                box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.21);
+            }
+
+            .header-bar {
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            background: linear-gradient(90deg, #5db7f3 0%, #2f9bf3 43%, #0587f1 100%);
+        }
+
+        .header-bar a {
+            color: rgb(5, 5, 5);
+            text-decoration: none;
+        }
+        .task-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #fff;
+            border-top: 1px solid #dfe4ea;
+            
+        }
+        .task-title {
+            display: flex;
+            padding: 20px;
+        }
+
+        .task-title a {
+            text-decoration: none;
+            color: #4b5156;
+            margin-left: 10px;
+        }
+        
+        .task-complete-icon {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(105, 192, 105);
+            border-radius: 50%;
+        }
+
+        .task-incomplete-icon {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(248, 6, 6);
+            border-radius: 50%;
+        }
+
+        .delete-link {
+            text-decoration: none;
+            font-weight: 900;
+            color: #cf4949;
+            font-size: 15px;
+            line-height: 0;
+            padding: 20px 0px;
+        }
+        #search-add-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea {
+            border: 1px solid #37e737;
+            border-radius: 5px;
+            padding: 10px;
+            width: 90%;
+        }
+        .button {
+            border: 1px solid #2f9bf3;
+            background-color: #FAFAFA;
+            color: #2f9bf3;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .content_img{
+ position: relative;
+ width: 200px;
+ height: 200px;
+ float: left;
+ margin-right: 10px;
+}
+
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+            {% block content%}
+
+            {% endblock content %}
+
+        </div>
+    </body>
+</html>

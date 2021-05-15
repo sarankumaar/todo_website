@@ -1,0 +1,14 @@
+{% extends 'base/main.html' %}
+{% block content %}
+<div class="header-bar">
+    <a href="{% url 'tasks' %}">GO BACK </a>
+</div>
+<h2>do u want to delete the list {{object}}</h2>
+<div class="card-body">
+<form method="POST">
+    {% csrf_token %}
+    <input class="button" type="submit" value="delete">
+</form>
+</div>
+
+{% endblock content %}
